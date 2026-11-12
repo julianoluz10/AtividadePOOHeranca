@@ -44,19 +44,16 @@ N2.Enviar();
 N3.Enviar();
 N4.Enviar();
 
+List<Entrega> lista = new List<Entrega>();
 
-EntregaExpress e1 = new EntregaExpress();
-e1.CalcularFrete(10);
+lista.Add(new EntregaExpress{Distancia = 10});
+lista.Add(new EntregaEconomica{Distancia = 10});
+lista.Add(new RetiradaLocal{Distancia = 10});
 
-EntregaEconomica e2 = new EntregaEconomica();
-e2.CalcularFrete(10);
-
-RetiradaLocal e3 = new RetiradaLocal();
-e3.CalcularFrete(10);
-
-
-List<double> Entrega = new List<double>();
-
+foreach (var item in lista)
+{
+    Console.WriteLine($"{item.CalcularFrete():C}");
+}
 
 System.Console.WriteLine();
 

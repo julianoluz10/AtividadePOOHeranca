@@ -16,10 +16,11 @@ namespace AtividadeHeranca
 {
     public class EntregaEconomica : Entrega
     {
-        public override void CalcularFrete(double distancia)
+        public override decimal CalcularFrete()
         {
-            Distancia = distancia;
-            System.Console.WriteLine($"O valor da Distancia Economica  {Distancia*0.1:C}");
+            // Distancia = distancia;
+            // System.Console.WriteLine($"O valor da Distancia Economica  {Distancia*0.1:C}");
+            return (decimal) Distancia*0.1m;
         }
         
     }

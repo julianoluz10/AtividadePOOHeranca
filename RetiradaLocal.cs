@@ -15,10 +15,12 @@ namespace AtividadeHeranca
 {
     public class RetiradaLocal :Entrega
     {
-         public override void CalcularFrete(double distancia)
+         public override decimal CalcularFrete()
         {
-            Distancia = distancia;
-            System.Console.WriteLine("Sem custo de frete");
+            // Distancia = distancia;
+            // System.Console.WriteLine("Sem custo de frete");
+
+            return 0.00m;
         }
         
     }

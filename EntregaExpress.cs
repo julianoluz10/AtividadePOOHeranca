@@ -15,10 +15,11 @@ namespace AtividadeHeranca
 {
     public class EntregaExpress :Entrega
     {
-        public override void CalcularFrete(double distancia)
+        public override decimal CalcularFrete()
         {
-            Distancia = distancia;
-            System.Console.WriteLine($"O valor da Distancia {Distancia*0.2:C}");
+            // Distancia = distancia;
+            // System.Console.WriteLine($"O valor da Distancia {Distancia*0.2:C}");
+             return (decimal)Distancia*0.2m;
         }
         
     }

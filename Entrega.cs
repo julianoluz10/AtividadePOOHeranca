@@ -18,6 +18,6 @@ namespace AtividadeHeranca
     {
         public double Distancia { get; set; }
 
-        public abstract void CalcularFrete(double distancia);
+        public abstract decimal CalcularFrete();
     }
 }
